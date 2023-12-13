@@ -45,8 +45,8 @@ export default function Home() {
   };
 
   return (
-    <main className='min-h-screen items-center justify-between p-24 md:flex'>
-      <section className='container mx-auto items-center py-32 w-full md:w-1/2'>
+    <main className='min-h-screen items-center justify-between p-2 md:p-24 md:flex'>
+      <section className='container mx-auto items-center py-2 md:py-32 w-full md:w-1/2'>
         <div className='max-w-sm mx-auto bg-white rounded-lg shadow-md overflow-hidden items-center'>
           <div className='px-4 py-6'>
             <form onSubmit={handleFormSubmit}>
@@ -196,13 +196,14 @@ export default function Home() {
               </div>
             </div>
             {showNotification && (
-              <div className='fixed bottom-0 mb-4 left-1/2 transform -translate-x-1/2 bg-green-500 text-white py-2 px-4 rounded-md'>
+              <div className='fixed bottom-0 mb-4 left-1/2 transform -translate-x-1/2 bg-green-500 text-white py-2 px-4 rounded-md text-center'>
                 Text copied to clipboard!
               </div>
             )}
           </div>
         </div>
       </section>
+      {/* footer cc by adam */}
     </main>
   );
 }
